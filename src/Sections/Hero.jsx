@@ -37,15 +37,15 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      <div className="relative flex-1 flex justify-center xl:min-h-screen max-xl:p-40 bg-primary bg-hero bg-cover bg-centre">
+      <div className="relative flex-1 flex justify-center xl:min-h-screen max-xl:p-40 bg-primary bg-hero bg-cover bg-center max-sm:p-28">
         <img
           src={bigShoe}
           alt="shoe collection"
-          width={610}
+          width={600}
           height={500}
-          className="object-contain relative z-9"
+          className="object-contain relative z-9 "
         />
-        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:w-full max-sm:px-6">
           {shoes.map((shoe, index) => {
             return (
               <div key={index}>
